@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yo Nunca · Política de privacidad</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; color: #1b1b1b; background: #faf9fd;
+    margin: 0 auto; max-width: 34rem; padding: 4rem 1.25rem;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e9e6f7; background: #17132e; } }
+  h1 { font-size: 1.5rem; margin: 0 0 1.5rem; }
+  li { margin-bottom: .6rem; }
+  a { color: #6a5fd0; }
+  @media (prefers-color-scheme: dark) { a { color: #b3a6ff; } }
+</style>
+</head>
+<body>
+<h1>Yo Nunca · Never Ever</h1>
+<ul>
+  <li><a href="privacidad.html">Política de privacidad (español)</a></li>
+  <li><a href="privacy.html">Privacy policy (English)</a></li>
+</ul>
+<script>
+  // Quien llegue aquí sin elegir, va a la de su idioma. Si el navegador no dice nada o
+  // tiene el JavaScript apagado, se queda esta página con los dos enlaces, que también
+  // sirve: nunca se queda nadie sin poder leerla.
+  var idioma = (navigator.language || '').toLowerCase();
+  location.replace(idioma.indexOf('es') === 0 ? 'privacidad.html' : 'privacy.html');
+</script>
+</body>
+</html>
